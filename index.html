@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<!-- estructura basica-->
+<head>
+    <title>CAC - Movies</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./icon.ico" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+    <body>
+    
+    <header class="header">
+        <div class="header_logo icon-container">
+            <i class="fa-solid fa-film textoBlanco"></i>
+            <h3 class="textoBlanco" >CAC - Movies</h3>
+        </div>
+
+        <div class="header_menu">
+            <a href="#Tendencias">Tendencias</a>
+            <a href="registrarse.html">Registrarse</a>
+            <a href="./sesion.html" class="fondoNegro" id="iniciarSesion">Iniciar Sesión</a>
+            <a href="./conexionapi.html" id="conexionapi">Conexion API</a>
+        </div>
+    </header>
+    <main>
+
+        <!-- imagen de fondo con los titulos y botones-->
+        <section class="main">
+            <h1 class="textoBlanco">Películas y series ilimitadas<br> en un solo lugar</h1>
+            <h2 class="textoBlanco">Disfruta donde quieras.<br> Cancela en cualquier momento</h2>
+            <a href="registrarse.html">
+                <button class="textoBlanco" >
+                Registrate
+            </button>
+        </a>
+        </section>
+        <section class="form-busqueda">
+            <h2>¿Qué estas buscando para ver?</h2>
+            <form action="./html/resultado-busqueda.html"
+                id="frm">
+                <input type="search" 
+                id="buscar"
+                placeholder="Buscar...">
+                <button id="btnBusqueda">
+                    Buscar
+                </button>
+            </form>
+        </section>
+      
+  <a href="#" id="inicio-btn">
+        <i class="fa-solid fa-circle-up" id="goBack"></i>
+    </a>
+
+
+    </main>
+    <hr>
+
+    <!-- TENDENCIASSSSSSSSSS -->
+    <section id="Tendencias" class="peliculasTendencia">
+        <h2>Las tendencias de hoy</h2>
+        <br>
+        <div class="peliculas">
+            <a href="#">
+                <div class="pelicula">
+                    <img class="imgTendencia contenedor" src="./imgs/01 Godzilla x Kong.jpg" alt="Godzilla x Kong">
+                    <div class="tituloPelicula">
+                        <h4>Godzilla x Kong</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="pelicula">
+                    <img class="imgTendencia" src="./imgs/02 Dune_part one.jpg" alt="Dune - Part 1">
+                    <div class="tituloPelicula">
+                        <h4>Dune - Parte 1</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="pelicula">
+
+                    <img class="imgTendencia" src="./imgs/01 Godzilla x Kong.jpg" alt="Godzilla x Kong" loading="lazy">
+
+                    <div class="tituloPelicula">
+                        <h4>Godzilla x Kong</h4>
+                    </div>
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="pelicula">
+
+                    <img class="imgTendencia" src="./imgs/03 Kung fu Panda 4.jpg" alt="Kung Fu Panda 4">
+
+                    <div class="tituloPelicula">
+                        <h4>Kung Fu Panda 4</h4>
+                    </div>
+                </div>
+
+            </a>
+            <a href="#">
+                <div class="pelicula">
+                    <img class="imgTendencia" src="./imgs/After the pandemic.jpg" alt="After the Pandemic">
+                    <div class="tituloPelicula">
+                        <h4>After the Pandemic</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="pelicula">
+                    <img class="imgTendencia" src="./imgs/01 Godzilla x Kong.jpg" alt="Godzilla x Kong">
+                    <div class="tituloPelicula">
+                        <h4>Godzilla x Kong</h4>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="pelicula">
+                    <img class="imgTendencia" src="./imgs/02 Dune_part one.jpg" alt="Dune - Part 1">
+                    <div class="tituloPelicula">
+                        <h4>Dune - Parte 1</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="pelicula">
+
+                    <img class="imgTendencia" src="./imgs/01 Godzilla x Kong.jpg" alt="Godzilla x Kong" loading="lazy">
+
+                    <div class="tituloPelicula">
+                        <h4>Godzilla x Kong</h4>
+                    </div>
+
+                </div>
+            </a>
+            <a href="#">
+                <div class="pelicula">
+
+                    <img class="imgTendencia" src="./imgs/03 Kung fu Panda 4.jpg" alt="Kung Fu Panda 4">
+
+                    <div class="tituloPelicula">
+                        <h4>Kung Fu Panda 4</h4>
+                    </div>
+                </div>
+
+            </a>
+            <a href="#">
+                <div class="pelicula">
+                    <img class="imgTendencia" src="./imgs/After the pandemic.jpg" alt="After the Pandemic">
+                    <div class="tituloPelicula">
+                        <h4>After the Pandemic</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="botones">
+            <input type="button" value="Anterior" class="boton">
+            <input type="button" value="Siguiente" class="boton">
+        </div>
+        <br>
+        <hr>
+        <br>
+        
+    </section>
+    </section>
+    <!-- DESTACADASSS -->
+    <section class="destacadas">
+        <h2>Las películas más buscadas</h2>
+        <div class="contenedorscroll">
+            <div class="lista">
+                <img src="./imgs/Cinema paradiso.jpg" class="imgD"></i>
+                <img src="./imgs/Civil War.jpg"class="imgD"></i>
+                <img src="./imgs/Creation of gods.jpg"class="imgD"></i>
+                <img src="./imgs/diwale diwale le jayenge.jpg"class="imgD"></i>
+                <img src="./imgs/Ghostbuster.jpg"class="imgD"></i>
+                <img src="./imgs/Pulp Fiction.jpg"class="imgD"></i>
+                <img src="./imgs/Forrest Gump.jpg"class="imgD"></i>
+                <img src="./imgs/The lord of the rings.jpg"class="imgD"></i>
+                <img src="./imgs/Your name.jpg"class="imgD"></i>
+                <img src="./imgs/Woody woodpecker.jpg"class="imgD"></i>
+            </div>
+        </div>
+    </section>
+    <!-- volver -->
+    <a href="#" id="inicio-btn">
+        <i class="fa-solid fa-circle-up" id="goBack"></i>
+    </a>
+   
+</body>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer_items">
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Ayuda</a>
+        <a href="#" class="fondoNegro">Administrador Peliculas</a>
+    </div>
+</footer>
+
+    <script src="https://kit.fontawesome.com/181725805d.js" crossorigin="anonymous"></script>
+    <script src="./scripts/app.js"></script>
+
+</body>
+</html>

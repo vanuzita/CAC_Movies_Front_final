@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--texto-blanco: #ffffff;
+    --color-primario: #9f3647;
+    --fondo-negro: #0a0a0a;
+    --gris: #808080;
+}
+
+.textoBlanco {
+    color: var(--texto-blanco);
+	text-decoration: none;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #f0e7e7;
+	background:linear-gradient(to right top, #27262673,#27262673),url("../imgs/fondo.jpg");
+}
+
+.contenedor {
+	width: 900%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #9f3647;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #9f3647;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #47020e;
+}
+
+.header_menu {
+
+	background: #9f3647;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	height: 72px;
+	font-size: 18px;
+	box-sizing:border-box;
+	align-items: center;
+	position: fixed;
+	text-decoration: none;
+}
+
+.header_menu a {
+    text-decoration: none;
+    color: var(--texto-blanco);
+    display: inline-block;
+    font-size: .9em;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+	
+}
+
+.header_menu a:hover {
+    background-color: var(--color-primario);
+    background-origin: inherit;
+    box-shadow: 1px 1px 1px 1px var(--fondo-negro);
+}
+.header {
+    background-color: var(--color-primario);
+    width: 100VW;
+    box-sizing: border-box;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+	justify-content: space-between;
+	
+}
+.header_logo {
+	padding-top: 10%;
+    display: inline-block;
+    width: 40vw;
+    margin-left: 35px;
+	
+}
+.header_logo h3 {
+    display: inline;
+    font-weight: 100;
+}
+

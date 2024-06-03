@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"  href="./icon.ico" >
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="./styles/registrarse.css">
+</head>
+<body class="bodyRegistrarse">
+    <header>
+        <div class="header_logo icon-container">
+        <i class="fa-solid fa-film textoBlanco"></i>
+        <h3 class="textoBlanco">
+            <a class="textoBlanco" href="./index.html"> CAC - Movies</a>
+        </h3>
+    </div>
+    </header>
+    <main  id="main" class="main">
+      <section  data-aos="zoom-in"  data-aos-duration="1000" class="seccionRegistrarse">
+        <form id="loginForm">
+            <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
+            <div class="inputs">
+                <input type="email" placeholder="Email" required id="email" name="email">
+                <input type="password" placeholder="Contraseña" required id="password" name="password">
+            </div>
+                       
+
+            <button type="button" class="boton" id="loginButton">Iniciar sesión</button>
+            <div > 
+                <a class="ayuda" href="https://www.instagram.com/asteriscolola/">No recuerdas tu contraseña?</a>
+                <a class="ayuda" href="./registrarse.html">Regístrate</a>
+
+            </div>
+        </form>
+      </section>
+
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>    
+        AOS.init();
+    </script>
+    <script src="./scripts/app.js"></script>     
+</body>
+</html>
